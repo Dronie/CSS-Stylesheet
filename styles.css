@@ -1,0 +1,26 @@
+/* should probably be using tags like <div> etc, and create classes to edit this, but since the heading is the
+only content in the page im just gonna stick it all in body, that and im not sure if we are even alowed to
+edit the HTML page at all :/ */
+/*Here I say that anything inside the <body> tag will have the corresponding attributes*/
+body{
+	/*This aligns the text so it is always centerd*/
+	text-align:center;
+	/*This sets the font of the text (default font of bootsrap)*/
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*This sets the colour (ive used a hex code to define the colour)*/
+	color: #6897bb;
+	/*This underlines the text*/
+	text-decoration:underline;
+	/*Adds a bit of space so the text doesnt sit right at the top*/
+	padding-top:25px;
+}
+/*Here ive tried to make the page a bit more responsive*/
+@media(max-width:1000px)/*if the window is smaller than 1000 pixels */{
+	body{/*Do this to everything in <body>*/
+		/*alter the centering of the text (move it all the way to the left)*/
+		text-align:left;
+		/*add a bit of space between the text and the sides of the window (all sides - left,right,top and bottom)
+		for aesthetics*/
+		padding: 25px;
+	}
+}
